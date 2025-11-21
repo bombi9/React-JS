@@ -1,0 +1,60 @@
+.method button {
+    position: relative;
+    border: none;   
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;  
+    height: 30vh;
+    width: 40vw;
+    font-size: 4em;
+    font-family: "Momo Signature", cursive;
+    transition: 
+        font-size 0.25s ease,
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.method button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.method button:hover::after {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.method button:hover {
+    font-size: 5em;
+    transform: scale(1.02);
+}
+
+.method button:active {
+    font-size: 4em;
+    transform: scale(0.94) rotateZ(1deg);
+}
+
+.methods { 
+    width: 100vw;
+    text-align: center;
+}
+
+.methods button { 
+    margin: 7px; 
+}
+
+.AHP {
+    border: 3px solid rgb(112, 124, 217);
+    background-image: linear-gradient(to right, rgb(56, 52, 145), rgb(71, 76, 175));
+}
+
+.ELECTRE {
+    border: 3px solid rgb(231, 97, 158);
+    background-image: linear-gradient(to right, rgb(162, 65, 124), rgb(212, 70, 120));
+}
